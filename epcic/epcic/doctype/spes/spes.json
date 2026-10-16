@@ -1,0 +1,173 @@
+{
+ "actions": [],
+ "autoname": "field:title",
+ "creation": "2026-10-16 16:45:20.258520",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "customer",
+  "column_break_hbhh",
+  "sheet_date",
+  "column_break_qqui",
+  "posting_date",
+  "tin_no",
+  "section_break_ydvw",
+  "vendor_code",
+  "column_break_gjbb",
+  "po_itemdate",
+  "column_break_wstt",
+  "sepra_nodate",
+  "section_break_uhfm",
+  "invoice_details",
+  "section_break_yjgq",
+  "items",
+  "section_break_ypdj",
+  "company",
+  "column_break_uqfi",
+  "status",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title",
+   "unique": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "column_break_hbhh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sheet_date",
+   "fieldtype": "Date",
+   "label": "Sheet Date"
+  },
+  {
+   "fieldname": "column_break_qqui",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "tin_no",
+   "fieldtype": "Data",
+   "label": "TIN No"
+  },
+  {
+   "fieldname": "section_break_ydvw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "vendor_code",
+   "fieldtype": "Data",
+   "label": "VENDOR CODE"
+  },
+  {
+   "fieldname": "column_break_gjbb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "po_itemdate",
+   "fieldtype": "Data",
+   "label": "PO ITEM/Date"
+  },
+  {
+   "fieldname": "column_break_wstt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sepra_nodate",
+   "fieldtype": "Data",
+   "label": "SEPRA NO/Date"
+  },
+  {
+   "fieldname": "section_break_uhfm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "invoice_details",
+   "fieldtype": "Data",
+   "label": "INVOICE DETAILS"
+  },
+  {
+   "fieldname": "section_break_yjgq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Spes Details"
+  },
+  {
+   "fieldname": "section_break_ypdj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "column_break_uqfi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nSubmit\nCompleted"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Spes",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-10-16 17:40:31.517429",
+ "modified_by": "Administrator",
+ "module": "EPCIC",
+ "name": "Spes",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
