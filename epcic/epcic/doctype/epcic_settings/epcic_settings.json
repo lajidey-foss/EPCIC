@@ -1,0 +1,113 @@
+{
+ "actions": [],
+ "creation": "2026-10-16 14:46:48.350266",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "currencies_section",
+  "a_currency",
+  "b_currency",
+  "column_break_1",
+  "selling_price_list",
+  "apply_default_taxes",
+  "numbering_section",
+  "base_number_format",
+  "controls_section",
+  "rule_date_basis",
+  "rounding_tolerance",
+  "column_break_2",
+  "invoice_action_role"
+ ],
+ "fields": [
+  {
+   "fieldname": "currencies_section",
+   "fieldtype": "Section Break",
+   "label": "Currencies"
+  },
+  {
+   "default": "USD",
+   "description": "Currency of Invoice A. Must equal the company currency.",
+   "fieldname": "a_currency",
+   "fieldtype": "Link",
+   "label": "Invoice A Currency",
+   "options": "Currency",
+   "reqd": 1
+  },
+  {
+   "description": "Local currency of Invoice B.",
+   "fieldname": "b_currency",
+   "fieldtype": "Link",
+   "label": "Invoice B Currency",
+   "options": "Currency",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "numbering_section",
+   "fieldtype": "Section Break",
+   "label": "Numbering"
+  },
+  {
+   "default": "INV-.YYYY.-.#####",
+   "description": "Format of the shared base number. Tokens: .YYYY. year, .FY. fiscal year, .#####. counter (required), {abbr} company abbreviation. A and B are named <number>-A and <number>-B.",
+   "fieldname": "base_number_format",
+   "fieldtype": "Data",
+   "label": "Base Number Format",
+   "reqd": 1
+  },
+  {
+   "fieldname": "controls_section",
+   "fieldtype": "Section Break",
+   "label": "Rules and Controls"
+  },
+  {
+   "default": "Services Date",
+   "description": "Which date on the PO Entry Sheet decides the Vendor Invoicing Compliance rule. Only matters once a second rule exists.",
+   "fieldname": "rule_date_basis",
+   "fieldtype": "Select",
+   "label": "Rule Date Basis",
+   "options": "Services Date\nPO Date\nSheet Date"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Accounts User",
+   "description": "Role allowed to use Create > Invoice A / Invoice B (Accounts Manager and System Manager are always allowed).",
+   "fieldname": "invoice_action_role",
+   "fieldtype": "Link",
+   "label": "Role That Can Create Paired Invoices",
+   "options": "Role"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-10-16 14:46:48.350266",
+ "modified_by": "Administrator",
+ "module": "EPCIC",
+ "name": "EPCIC Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
